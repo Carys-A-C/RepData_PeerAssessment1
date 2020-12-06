@@ -111,6 +111,8 @@ quantile(dat1$total_steps, 0.5)
 ##   50% 
 ## 10765
 ```
+The mean is 10766.19 and the median is 10765.
+
 
 ## What is the average daily activity pattern?
 
@@ -266,8 +268,9 @@ quantile(dat6$total_steps, 0.5)
 ##      50% 
 ## 10766.19
 ```
-The original mean was 10766.19, and is the same as the current one
-The original median was 10765 and the new one is 10766.19
+The original mean was 10766.19, and is the same as the current one.
+
+The original median was 10765 and the new one is 10766.19.
 
 The mean did not change, while the median increased slightly.
 In this case the values differ very little (they would have differed more had I done sum(data, na.rm = TRUE) instead of filtering them out). The histogram does look a bit different, it has a higher peak at the mean.

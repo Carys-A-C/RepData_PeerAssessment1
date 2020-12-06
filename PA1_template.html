@@ -246,6 +246,7 @@ str(dat)</code></pre>
 <pre class="r"><code>quantile(dat1$total_steps, 0.5)</code></pre>
 <pre><code>##   50% 
 ## 10765</code></pre>
+<p>The mean is 10766.19 and the median is 10765.</p>
 </div>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">
@@ -333,7 +334,8 @@ length(dat5) == length(dat) ## Check dataframes are the same length</code></pre>
 <pre class="r"><code>quantile(dat6$total_steps, 0.5)</code></pre>
 <pre><code>##      50% 
 ## 10766.19</code></pre>
-<p>The original mean was 10766.19, and is the same as the current one The original median was 10765 and the new one is 10766.19</p>
+<p>The original mean was 10766.19, and is the same as the current one.</p>
+<p>The original median was 10765 and the new one is 10766.19.</p>
 <p>The mean did not change, while the median increased slightly. In this case the values differ very little (they would have differed more had I done sum(data, na.rm = TRUE) instead of filtering them out). The histogram does look a bit different, it has a higher peak at the mean.</p>
 </div>
 </div>
